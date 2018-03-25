@@ -27,7 +27,7 @@ test('GET /health', t => {
 test('GET /docker', t => {
   api
     .get('/docker')
-    .expect('Content-type', json)
+    .expect('Content-type', /json/)
     .expect(200)
     .end((err, res) => {
       if (err) {
