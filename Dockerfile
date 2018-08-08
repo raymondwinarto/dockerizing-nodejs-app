@@ -53,3 +53,5 @@ EXPOSE 4500
 
 CMD ["pm2", "start", "processes.json", "--no-daemon"]
 # the --no-daemon is a minor workaround to prevent the docker container from thinking pm2 has stopped running and ending itself
+# run with "sudo docker build -t rayswin/dockerizing-nodejs-app ."
+# docker run -p 4500:4500 rayswin/dockerizing-nodejs-app
